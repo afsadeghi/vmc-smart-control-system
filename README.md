@@ -7,6 +7,9 @@ It compares a traditional reactive control strategy with a predictive MPC-based 
 
 ---
 
+Live demo: https://vmc-smart-control-system.streamlit.app
+
+
 ## Project Goal
 
 The goal of this project is to demonstrate how an AI-driven multi-agent architecture can support decision-making in ventilation systems.
