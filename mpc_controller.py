@@ -244,9 +244,12 @@ class MPCController:
         if co2 > co2_warning:
             score += 20 + ((co2 - co2_warning) / 30) ** 2 * 5
 
-        # Penalità umidità
+        # Penalità umidità più severa
+        if humidity > 58:
+            score += ((humidity - 58) / 2) ** 2 * 4
+
         if humidity > humidity_warning:
-            score += ((humidity - humidity_warning) / 2) ** 2 * 3
+            score += 10 + ((humidity - humidity_warning) / 1.5) ** 2 * 8
 
         # Costo energia
         score += step_cost * 80
