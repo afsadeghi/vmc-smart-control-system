@@ -174,7 +174,8 @@ st.divider()
 
 st.subheader("Confronto diretto: Reattivo vs Predittivo")
 
-reactive_cost = df_reactive["cumulative_cost_eur"].iloc[-1]predictive_cost = df_predictive["cumulative_cost_eur"].iloc[-1]
+reactive_cost = df_reactive["cumulative_cost_eur"].iloc[-1]
+predictive_cost = df_predictive["cumulative_cost_eur"].iloc[-1]
 
 reactive_high_h = (df_reactive["vmc"] == "alta").sum() * hours_factor
 predictive_high_h = (df_predictive["vmc"] == "alta").sum() * hours_factor
